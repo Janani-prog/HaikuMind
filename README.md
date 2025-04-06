@@ -12,4 +12,4 @@ A sleek AI chatbot powered by Claude 3 Haiku via OpenRouter API.
 1. Clone this repo
 
 ## Live Demo
-[View on GitHub Pages](#) *(link added after deployment)*
+[View on GitHub Pages](#) https://haikumind.onrender.com/
