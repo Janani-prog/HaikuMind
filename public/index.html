@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure ChatBot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2><i class="fas fa-robot me-2"></i>Secure ChatBot</h2>
+            <button class="clear-button" id="clearChat">
+                <i class="fas fa-broom"></i> Clear Chat
+            </button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="message-container">
+                <div class="bot-message">
+                    Hello! I'm your secure AI assistant. How can I help you today?
+                </div>
+                <p class="message-meta ms-2">Bot • Just now</p>
+            </div>
+        </div>
+        <div class="features">
+            <button class="feature-button" onclick="suggestQuestion('Tell me about artificial intelligence')">AI Basics</button>
+            <button class="feature-button" onclick="suggestQuestion('What can you do?')">Your Capabilities</button>
+            <button class="feature-button" onclick="suggestQuestion('Write a short poem')">Creative Writing</button>
+        </div>
+        <div class="user-input-container">
+            <input type="text" id="userInput" placeholder="Type your message here..." autocomplete="off">
+            <button id="askButton" onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i> Send
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
